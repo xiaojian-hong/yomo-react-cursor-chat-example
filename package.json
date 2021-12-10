@@ -7,10 +7,19 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "prettier": {
+    "printWidth": 80,
+    "tabWidth": 4,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
   "dependencies": {
     "next": "12.0.7",
+    "next-auth": "^4.0.2",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "yomo-react-cursor-chat": "^0.0.7"
   },
   "devDependencies": {
     "@types/node": "16.11.12",
