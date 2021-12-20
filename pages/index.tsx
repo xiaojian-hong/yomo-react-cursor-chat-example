@@ -1,8 +1,8 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
-import CursorChat from 'yomo-react-cursor-chat';
-import 'yomo-react-cursor-chat/dist/cursor-chat.min.css';
+import CursorChat from '@yomo/react-cursor-chat';
+import '@yomo/react-cursor-chat/dist/cursor-chat.min.css';
 import styles from '../styles/Home.module.css';
 
 const Home: NextPage = () => {
@@ -32,7 +32,6 @@ const Home: NextPage = () => {
                 </p>
                 <CursorChat
                     socketURL="wss://ws-dev.yomo.run"
-                    sendingTimeInterval={200}
                     avatar={`/cursor-avatar-${new Date().getSeconds() % 9}.png`}
                     theme="light"
                 />
