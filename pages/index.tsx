@@ -31,7 +31,7 @@ const Home: NextPage = () => {
                     close the input box
                 </p>
                 <CursorChat
-                    socketURL="wss://ws-dev.yomo.run"
+                    socketURL="wss://x.yomo.dev/presence"
                     avatar={`/cursor-avatar-${new Date().getSeconds() % 9}.png`}
                     theme="light"
                 />
